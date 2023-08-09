@@ -44,17 +44,22 @@
 		</dependency>
 		
 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>6.0</version>
-		</dependency>
-		<dependency>
 		   <groupId>com.alibaba</groupId>
 		   <artifactId>druid-spring-boot-starter</artifactId>
 		   <version>1.1.6</version>
 		</dependency>
 		
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>oracle-maven</id>
+			<url>https://maven.oracle.com</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>

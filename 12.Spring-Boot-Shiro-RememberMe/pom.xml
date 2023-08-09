@@ -50,14 +50,7 @@
 		    <version>1.4.0</version>
 		</dependency>
 		
-		
-		<!-- oracle驱动 -->
-		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc6</artifactId>
-			<version>6.0</version>
-		</dependency>
-		
+
 		<!-- druid数据源驱动 -->
 		<dependency>
 		   <groupId>com.alibaba</groupId>
@@ -66,6 +59,16 @@
 		</dependency>
 
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>oracle-maven</id>
+			<url>https://maven.oracle.com</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
 
 	<build>
 		<plugins>
